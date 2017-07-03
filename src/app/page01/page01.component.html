@@ -1,0 +1,8 @@
+<p>コンポーネント(1/2)</p>
+<p><input type="text" [(ngModel)]="value01"></p>
+<p>入力金額 {{value01}}</p>
+<p>税込金額 {{calc()}}</p>
+<p>閲覧回数 {{counterService.counter}}</p>
+<p><a routerLink="/page02">2ページ目</a></p>
+<hr/>
+<child [childValue]="value01"></child>
