@@ -9,6 +9,7 @@ import { CalcService } from "./calc.service";
 import { CounterService } from "./counter.service";
 import { AppRoutingModule } from "app/app-routing.module";
 import { Page02Component } from './page02/page02.component';
+import { StoreService } from "app/store.service";
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { Page02Component } from './page02/page02.component';
   providers: [
     CalcService,
     CounterService,
+    StoreService,
   ],
   //最初に起動するコンポーネント
   bootstrap: [AppComponent]

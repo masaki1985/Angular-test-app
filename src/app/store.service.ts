@@ -17,7 +17,7 @@ export class StoreService {
   }
 
   //保存した値を読み取り
-  readStroe(): number {
+  readStore(): number {
     console.log("@@@readStore");
     return this.sharedDate;
   }

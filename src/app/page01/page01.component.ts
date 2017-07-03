@@ -2,8 +2,8 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
 import { FormsModule } from '@angular/forms'
 import { Router } from "@angular/router";
 
-import { CalcService } from "./calc.service";
-import { CounterService } from "./counter.service";
+import { CalcService } from "app/calc.service";
+import { CounterService } from "app/counter.service";
 
 @Component({
   selector: 'page01',
@@ -18,7 +18,7 @@ export class Page01Component implements OnChanges, OnInit, DoCheck, AfterContent
   constructor(
     private router: Router,
     private calcService: CalcService,
-    public counterService: CounterService) { 
+    public  counterService: CounterService) { 
       console.log("@@@constructor");
   }
 
@@ -32,32 +32,32 @@ export class Page01Component implements OnChanges, OnInit, DoCheck, AfterContent
     this.counterService.counter++;
   }
 
- ngOnChanges(changes: SimpleChanges): void {
-    // throw new Error("Method not implemented.");
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("@@@ngOnChanges");
   }
 
   ngDoCheck(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngDoCheck");
   }
 
   ngAfterContentInit(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngAfterContentInit");
   }
 
   ngAfterContentChecked(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngAfterContentChecked");
   }
 
   ngAfterViewInit(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngAfterViewInit");
   }
 
   ngAfterViewChecked(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngAfterViewChecked");
   }
 
   ngOnDestroy(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngOnDestroy");
   }
 
 }

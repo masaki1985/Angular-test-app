@@ -11,6 +11,8 @@ export class AppComponent {
 
   constructor(
     private router: Router
-  ){ }
+  ){
+    console.log("@@@constructor");
+  }
   
 }
