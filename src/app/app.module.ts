@@ -5,9 +5,10 @@ import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { Page01Component } from './page01/page01.component';
 import { ChildComponent } from './page01/child/child.component';
-import { CalcService } from "app/page01/calc.service";
-import { CounterService } from "app/page01/counter.service";
+import { CalcService } from "./calc.service";
+import { CounterService } from "./counter.service";
 import { AppRoutingModule } from "app/app-routing.module";
+import { Page02Component } from './page02/page02.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AppRoutingModule } from "app/app-routing.module";
   declarations: [
     AppComponent,
     Page01Component,
-    ChildComponent
+    ChildComponent,
+    Page02Component
   ],
   //このアプリで利用するモジュール
   imports: [
