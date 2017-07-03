@@ -21,4 +21,5 @@ export class StoreService {
     console.log("@@@readStore");
     return this.sharedDate;
   }
+  
 }
