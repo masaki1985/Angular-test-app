@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   //HTMLの出力先として<app-root>を指定
@@ -16,4 +17,9 @@ export class AppComponent {
 
   //変数titleの宣言と値の代入
   title = 'こんにちは';
+
+  constructor(
+    private router: Router
+  ){}
+  
 }

@@ -1,20 +1,24 @@
-import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges } from '@angular/core';
+import { FormsModule } from '@angular/forms'
+import { Router } from "@angular/router";
 
 import { CalcService } from "./calc.service";
 import { CounterService } from "./counter.service";
 
 @Component({
-  selector: 'app-page01',
+  selector: 'page01',
   templateUrl: './page01.component.html',
   styleUrls: ['./page01.component.css']
 })
 
 export class Page01Component implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+
   value01 = 0;
 
   constructor(
+    private router: Router,
     private calcService: CalcService,
-    private CounterService: CounterService) { 
+    public counterService: CounterService) { 
       console.log("@@@constructor");
   }
 
@@ -22,37 +26,38 @@ export class Page01Component implements OnChanges, OnInit, DoCheck, AfterContent
     console.log("@@@calc");
     return this.calcService.addTax(this.value01);
   }
+
   ngOnInit() {
     console.log("@@@ngOnInit");
-    this.CounterService.counter++;
+    this.counterService.counter++;
   }
 
-  ngOnChanges(): void {
-    throw new Error("Method not implemented.");
+ ngOnChanges(changes: SimpleChanges): void {
+    // throw new Error("Method not implemented.");
   }
 
   ngDoCheck(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
 
   ngAfterContentInit(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
 
   ngAfterContentChecked(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
 
   ngAfterViewInit(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
 
   ngAfterViewChecked(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
 
   ngOnDestroy(): void {
-    throw new Error("Method not implemented.");
+    // throw new Error("Method not implemented.");
   }
 
 }
