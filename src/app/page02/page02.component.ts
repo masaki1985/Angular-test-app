@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges } from '@angular/core';
 
-import { StoreService } from "app/store.service";
+import { StoreService } from "app/core/store.service";
 
 @Component({
   selector: 'app-page02',

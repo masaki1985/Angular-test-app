@@ -2,8 +2,8 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
 import { FormsModule } from '@angular/forms'
 import { Router } from "@angular/router";
 
-import { CalcService } from "app/calc.service";
-import { CounterService } from "app/counter.service";
+import { CalcService } from "app/core/calc.service";
+import { CounterService } from "app/core/counter.service";
 
 @Component({
   selector: 'page01',

@@ -24,7 +24,7 @@ export class ChildComponent implements OnChanges {
   }
 
   ngOnChanges(): void {
-    // throw new Error("Method not implemented.");
+    console.log("@@@ngOnChanges");
   }
 
 }
