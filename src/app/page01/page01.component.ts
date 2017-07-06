@@ -1,5 +1,5 @@
 import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+
 import { Router } from "@angular/router";
 
 import { CalcService } from "app/core/calc.service";

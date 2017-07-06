@@ -12,7 +12,7 @@ export class StoreService {
 
   //受け取った値を保存
   writeStore(num: number) {
-    console.log("@@@weriteStore");
+    console.log("@@@writeStore");
     this.sharedDate = num;
   }
 
